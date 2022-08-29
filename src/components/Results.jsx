@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useLocation } from "react-router-dom"
 import { useResultContext } from '../context/ResultContextProvider'
+import Loading from './Loader'
 
 const Results = () => {
     const {results, isLoading, getResult} = useResultContext()
@@ -10,7 +11,7 @@ const Results = () => {
         getResult(location.pathname)
     }, [location.pathname])
 
-    if(isLoading) return "Loading....."
+    if(isLoading) return <Loading />
     switch (location.pathname) {
         case "/pasta":
             return (

@@ -7,7 +7,7 @@ const HomePage = () => {
     const current = new Date();
     const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
   return (
-      <div className='text-white grid grid-cols-2 lg:grid-cols-3 ml-[120px] gap-4'>
+      <div className='text-white grid grid-cols-2 lg:grid-cols-3 ml-[120px] gap-4 w-full'>
         <div className='lg:col-span-2 mt-7'>
             <div className='flex justify-between items-center'>
                 <div className='flex flex-col'>
