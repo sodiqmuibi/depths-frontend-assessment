@@ -166,21 +166,21 @@ const Dashboard = () => {
                         </select>
                     </div>
                     <div className='flex items-center gap-4 mt-5'>
-                        <img src={results?.results?.[0]?.image} className="w-10 rounded-full"/>
+                        <img src={results?.results?.[0]?.image} alt="/" className="w-10 rounded-full"/>
                         <div className='flex flex-col'>
                             <p className='text-sm text-gray-300'>{results?.results?.[0].title.length > 20 ? results?.results?.[0].title.substring(0,30) : results?.results?.[0].title }</p>
                             <p className='text-sm text-gray-500'>200 dishes ordered</p>
                         </div>
                     </div>
                     <div className='flex items-center gap-4 mt-6'>
-                        <img src={results?.results?.[1]?.image} className="w-10 rounded-full"/>
+                        <img src={results?.results?.[1]?.image} alt="/" className="w-10 rounded-full"/>
                         <div className='flex flex-col'>
                             <p className='text-sm text-gray-300'>{results?.results?.[1].title.length > 20 ? results?.results?.[1].title.substring(0,30) : results?.results?.[1].title }</p>
                             <p className='text-sm text-gray-500'>120 dishes ordered</p>
                         </div>
                     </div>
                     <div className='flex items-center gap-4 mt-6'>
-                        <img src={results?.results?.[2]?.image} className="w-10 rounded-full"/>
+                        <img src={results?.results?.[2]?.image} alt="/" className="w-10 rounded-full"/>
                         <div className='flex flex-col'>
                             <p className='text-sm text-gray-300'>{results?.results?.[2].title.length > 20 ? results?.results?.[2].title.substring(0,30) : results?.results?.[2].title }</p>
                             <p className='text-sm text-gray-500'>80 dishes ordered</p>
